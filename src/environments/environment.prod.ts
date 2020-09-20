@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  config: {
+    apiUrl: '这是生产连接'
+  }
 };
