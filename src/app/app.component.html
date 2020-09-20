@@ -1,6 +1,1 @@
-<weui-navbar>
-  <weui-tab heading="{{title}}" ></weui-tab>
-</weui-navbar>
-<weui-tabbar>
-  <weui-tab *ngFor="let tab of tabs" heading="{{tab.title}}" [iconClassName]="tab.active? tab.active_icon_class: tab.icon_class" (select)="handleSelect(tab)"></weui-tab>
-</weui-tabbar>
+<app-menu></app-menu>

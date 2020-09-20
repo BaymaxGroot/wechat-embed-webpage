@@ -1,0 +1,6 @@
+<weui-tabbar>
+  <weui-tab *ngFor="let tab of tabs" heading="{{tab.title}}" [routerLink]="tab.routerLink"
+            [iconClassName]="tab.active? tab.active_icon_class: tab.icon_class" (select)="handleSelect(tab)">
+    <router-outlet></router-outlet>
+  </weui-tab>
+</weui-tabbar>
