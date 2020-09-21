@@ -1,7 +1,12 @@
-<weui-navbar>
-  <weui-tab heading="首页"></weui-tab>
-</weui-navbar>
-
-<div>
-  测试首页
-</div>
+<weui-swiper [options]="{ effect: 'fade', spaceBetween: 30, autoplay: 2000 }">
+  <div class="swiper-container">
+      <!-- 容器（必选） -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let i of swipeItems">
+          <img src="{{ i.icon }}" />
+        </div>
+      </div>
+      <!-- 分页（可选） -->
+      <div class="swiper-pagination"></div>
+    </div>
+</weui-swiper>

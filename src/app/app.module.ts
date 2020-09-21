@@ -11,12 +11,18 @@ import {WeUiModule} from 'ngx-weui';
  */
 import { HomeComponent } from './view/home/home.component';
 import { MenuComponent } from './view/menu/menu.component';
+import { AccountComponent } from './view/account/account.component';
+import { ServiceComponent } from './view/service/service.component';
+import { NannyComponent } from './view/nanny/nanny.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    AccountComponent,
+    ServiceComponent,
+    NannyComponent
   ],
   imports: [
     BrowserModule,

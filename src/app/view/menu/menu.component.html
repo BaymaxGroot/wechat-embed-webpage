@@ -1,6 +1,14 @@
 <weui-tabbar>
-  <weui-tab *ngFor="let tab of tabs" heading="{{tab.title}}" [routerLink]="tab.routerLink"
+  <weui-tab *ngFor="let tab of tabs" heading="{{tab.title}}"
             [iconClassName]="tab.active? tab.active_icon_class: tab.icon_class" (select)="handleSelect(tab)">
-    <router-outlet></router-outlet>
+    <weui-navbar>
+      <weui-tab heading="{{title}}"></weui-tab>
+    </weui-navbar>
+    <app-home *ngIf="tab.title == '首页'"></app-home>
+    <app-nanny *ngIf="tab.title == '保姆月嫂'"></app-nanny>
+    <app-service *ngIf="tab.title == '综合服务'"></app-service>
+    <app-account *ngIf="tab.title == '我的'"></app-account>
   </weui-tab>
+  <router-outlet></router-outlet>
 </weui-tabbar>
+
