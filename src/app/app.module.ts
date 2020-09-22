@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'ngx-weui/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {WeUiModule} from 'ngx-weui';
+import {SwiperModule, WeUiModule} from 'ngx-weui';
 /**
  * Tab Component
  */
@@ -29,7 +29,8 @@ import { NannyComponent } from './view/nanny/nanny.component';
     AppRoutingModule,
     ButtonModule,
     BrowserAnimationsModule,
-    WeUiModule
+    WeUiModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

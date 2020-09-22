@@ -1,11 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.less']
+  styleUrls: ['./home.component.less'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
+
+  swipeOption = {
+    autoSwipe: true,
+    speed: 1000,
+    continuousScroll: true,
+    lazyLoad: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      reverseDirection: true
+    }
+  };
 
   swipeItems = [
     { icon: 'https://image.haobangni.com/upfiles/sysattachment/propertyitem/2020-05/c52201b7-f95d-4bd6-80fb-9ba0b2d22658.jpg' },

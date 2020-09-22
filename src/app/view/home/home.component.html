@@ -1,12 +1,12 @@
-<weui-swiper [options]="{ effect: 'fade', spaceBetween: 30, autoplay: 2000 }">
+<weui-swiper [options]="swipeOption">
   <div class="swiper-container">
-      <!-- 容器（必选） -->
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let i of swipeItems">
-          <img src="{{ i.icon }}" />
-        </div>
+    <!-- 容器（必选） -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let i of swipeItems">
+        <img src="{{ i.icon }}"/>
       </div>
-      <!-- 分页（可选） -->
-      <div class="swiper-pagination"></div>
     </div>
+    <!-- 分页（可选） -->
+    <div class="swiper-pagination"></div>
+  </div>
 </weui-swiper>
